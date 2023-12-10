@@ -45,9 +45,9 @@ const Sidebar = () => {
         >
           {" "}
           {!open ? (
-            <HiMenuAlt1 className="text-2xl font-extrabold mx-auto"></HiMenuAlt1>
+            <HiMenuAlt1 className="text-4xl font-extrabold mx-auto"></HiMenuAlt1>
           ) : (
-            <IoMdCloseCircle className="text-2xl font-extrabold mx-auto"></IoMdCloseCircle>
+            <IoMdCloseCircle className="text-4xl font-extrabold mx-auto"></IoMdCloseCircle>
           )}
         </button>
       </div>

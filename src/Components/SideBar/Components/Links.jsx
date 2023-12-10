@@ -1,31 +1,88 @@
-
+import { motion } from 'framer-motion';
+const variants = {
+  open: {
+    transition: {
+      staggerChildren : 0.1,
+    }
+  },
+  closed: {
+    transition: {
+      staggerChildren: 0.05,
+      staggerDirection: -1
+    }
+  }
+}
+const linkVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+  },
+};
 
 const Links = () => {
 
     const links = (
       <>
-        <a className={"text-xl font-bold uppercase"} href={`#homepage`}>
+        <motion.a
+          variants={linkVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.95 }}
+          className={"text-xl font-bold uppercase"}
+          href={`#homepage`}
+        >
           Home Page
-        </a>
-        <a className={"text-xl font-bold uppercase"} href={"#services"}>
+        </motion.a>
+        <motion.a
+          variants={linkVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.95 }}
+          className={"text-xl font-bold uppercase"}
+          href={"#services"}
+        >
           services
-        </a>
-        <a className={"text-xl font-bold uppercase"} href={"#portfolio"}>
+        </motion.a>
+        <motion.a
+          variants={linkVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.95 }}
+          className={"text-xl font-bold uppercase"}
+          href={"#portfolio"}
+        >
           Portfolio
-        </a>
-        <a className={"text-xl font-bold uppercase"} href={"#contact"}>
+        </motion.a>
+        <motion.a
+          variants={linkVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.95 }}
+          className={"text-xl font-bold uppercase"}
+          href={"#contact"}
+        >
           Contact
-        </a>
-        <a className={"text-xl font-bold uppercase"} href={"#about"}>
+        </motion.a>
+        <motion.a
+          variants={linkVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.95 }}
+          className={"text-xl font-bold uppercase"}
+          href={"#about"}
+        >
           About
-        </a>
+        </motion.a>
       </>
     );
     
     return (
-        <div className="absolute w-full h-full flex flex-col items-center justify-center gap-5">
-            { links}
-        </div>
+      <motion.div
+        variants={variants}
+        className="absolute w-full h-full flex flex-col items-center justify-center gap-5"
+      >
+        {links}
+      </motion.div>
     );
 };
 
