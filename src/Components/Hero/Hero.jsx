@@ -1,14 +1,47 @@
+import { motion } from "framer-motion"
+
+
+const textVarients = {
+    initials: {
+        x: -500,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren : 0.1
+        }
+    }
+} 
 
 const Hero = () => {
     return (
-      <div  className=" h-[90vh]  bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
-        <div className="flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-6xl uppercase font-bold pb-6">Alvi Asad</h1>
-            <h1 className="text-4xl font-bold uppercase pb-10">
+      <div className=" h-[90vh]  bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <motion.div
+            variants={textVarients}
+            initial="initials"
+            animate={"animate"}
+            className="text-center pt-20"
+          >
+            <motion.h1
+              variants={textVarients}
+              className="text-6xl uppercase font-bold pb-6 text-white"
+            >
+              Alvi Asad
+            </motion.h1>
+            <motion.h1
+              variants={textVarients}
+              className="text-4xl font-bold uppercase pb-10 text-white"
+            >
               Mern stack developer
-            </h1>
-            <p className="text-center text-xl font-bold max-w-2xl">
+            </motion.h1>
+            <motion.p
+              variants={textVarients}
+              className="text-center  md:text-xl font-bold max-w-2xl text-white tracking-wide "
+            >
               I am a MERN stack developer passionate about crafting seamless
               digital experiences. Currently studying Computer Science and
               Engineering, my expertise lies in React, Firebase, Mongodb and
@@ -16,22 +49,28 @@ const Hero = () => {
               and dedication. Beyond web development, I am excited about
               venturing into AI in the next five years, pushing the boundaries
               of technology.
-            </p>
-            <div className="mt-10 flex gap-5 justify-center">
-              <button className="btn btn-primary uppercase text-white ">
+            </motion.p>
+            <motion.div
+              variants={textVarients}
+              className="mt-10 flex gap-5 justify-center"
+            >
+              <motion.button
+                variants={textVarients}
+                className="btn btn-primary border-2 border-white hover:bg-white hover:text-violet-700 font-bold hover:border-2 bg-transparent text-white hover:border-violet-500  uppercase   "
+              >
                 Download my resume
-              </button>
-              <button className="btn btn-primary uppercase text-white ">
+              </motion.button>
+              <motion.button
+                variants={textVarients}
+                className="btn btn-primary border-2 border-white hover:bg-white hover:text-violet-700 font-bold hover:border-2 bg-transparent text-white hover:border-violet-500  uppercase "
+              >
                 Contact Me
-              </button>
-            </div>
-          </div>
+              </motion.button>
+            </motion.div>
+          </motion.div>
+         
           <div>
-            <img
-              className="pb-24"
-              src={`https://github.com/alviasad0/My-protfolio-website/assets/79654387/29c80feb-5b1c-4113-8356-cd0214e4b6e0`}
-              alt=""
-            />
+            <img className="pb-24" src="/src/assets/profile.png" alt="" />
           </div>
         </div>
       </div>

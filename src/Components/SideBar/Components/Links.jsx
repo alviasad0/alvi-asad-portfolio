@@ -24,7 +24,7 @@ const linkVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({setOpen}) => {
 
     const links = (
       <>
@@ -78,10 +78,11 @@ const Links = () => {
     
     return (
       <motion.div
+        onClick={() => setOpen((prev) => !prev)}
         variants={variants}
         className="absolute w-full h-full flex flex-col items-center justify-center gap-5"
       >
-        {links}
+      {links}
       </motion.div>
     );
 };
