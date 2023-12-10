@@ -1,5 +1,6 @@
 
 
+import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import "./app.css"
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className="bg-[#0c0c1d] text-[#CCCCCC]">
         <section id="homepage" className="h-screen snap-center">
           <Navbar></Navbar>
+          <Hero></Hero>
         </section>
         <section id="services" className="h-screen snap-center">
           Parallax
