@@ -15,13 +15,13 @@ function App() {
           <Hero></Hero>
         </section>
 
-        <section id="skills" className="h-screen snap-center">
+        <section id="skills" className=" snap-center">
           <Skills></Skills>
         </section>
+       
         <section id="portfolio" className="h-screen snap-center">
-          
+          Portfolio 1
         </section>
-        <section className="h-screen snap-center">Portfolio 1</section>
         <section className="h-screen snap-center">Portfolio 2</section>
         <section className="h-screen snap-center">Portfolio 3</section>
         <section id="contact" className="h-screen snap-center">
