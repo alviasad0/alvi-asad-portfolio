@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://i.ibb.co/S5rddLm/html.png",
+    "name": "HTML",
+    "description": "Proficient in creating structured and semantic markup for building web pages. Well-versed in HTML5 features and best practices."
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://i.ibb.co/BnynGKR/css.png",
+    "name": "CSS",
+    "description": "Skilled in crafting stylish and responsive user interfaces using CSS. Familiar with modern layout techniques and pre-processors like Sass."
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://i.ibb.co/GRpwksc/tailwindcss.png",
+    "name": "Tailwind CSS",
+    "description": "Experienced in using Tailwind CSS for rapid and utility-first development. Adept at creating efficient and maintainable styles with Tailwind."
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://i.ibb.co/5vpcFQc/daisyui.png",
+    "name": "DaisyUI",
+    "description": "Proficient in utilizing DaisyUI components for Vue.js development. Comfortable with integrating and customizing components for tailored user interfaces."
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://i.ibb.co/jv2JRd5/mui.png",
+    "name": "Material-UI",
+    "description": "Skilled in implementing Material-UI components to achieve a consistent and visually appealing design in React applications."
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://i.ibb.co/mJ46c5L/react.png",
+    "name": "React",
+    "description": "Highly proficient in building dynamic and interactive user interfaces using React. Experienced in state management, component lifecycle, and hooks."
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://i.ibb.co/YQPMDdQ/express.png",
+    "name": "Express.js",
+    "description": "Skilled in developing server-side applications using Express.js. Familiar with routing, middleware, and RESTful API design."
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://i.ibb.co/rH4GHBr/mongodb.png",
+    "name": "MongoDB",
+    "description": "Experienced in working with MongoDB for database management. Proficient in CRUD operations, indexing, and schema design."
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://i.ibb.co/jLb2F32/firebase.png",
+    "name": "Firebase",
+    "description": "Skilled in utilizing Firebase for backend services, authentication, and real-time database capabilities. Experienced in Firebase hosting and cloud functions."
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://i.ibb.co/KFj7r1T/netlify.png",
+    "name": "Netlify",
+    "description": "Proficient in deploying web applications to Netlify for seamless hosting, continuous integration, and automated deployment workflows."
+  },
+  {
+    "id": 11,
+    "imageUrl": "https://i.ibb.co/RgCGZg8/nodejs.png",
+    "name": "Node.js",
+    "description": "Experienced in server-side JavaScript development with Node.js. Adept at building scalable and performant applications using the Node.js runtime."
+  },
+  {
+    "id": 12,
+    "imageUrl": "https://i.ibb.co/ynRf9G8/js.png",
+    "name": "JavaScript",
+    "description": "Highly skilled in JavaScript, including ES6 and modern features. Proficient in both frontend and backend development using JavaScript."
+  }
+]

@@ -70,7 +70,7 @@ const Hero = () => {
           </motion.div>
 
           <div>
-            <img className="opacity-90" src="/src/assets/alviasad_banner-removebg-preview.png" alt="" />
+            <img className="opacity-90" src="/src/assets/banner.png" alt="" />
           </div>
         </div>
       </div>
