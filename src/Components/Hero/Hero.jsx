@@ -19,7 +19,7 @@ const textVarients = {
 const Hero = () => {
     return (
       <div className=" md:h-[90vh]  bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex flex-col  md:flex-row items-center justify-center md:gap-32">
           <motion.div
             variants={textVarients}
             initial="initials"
@@ -70,7 +70,7 @@ const Hero = () => {
           </motion.div>
 
           <div>
-            <img className="pb-24" src="/src/assets/profile.png" alt="" />
+            <img className="opacity-90" src="/src/assets/alviasad_banner-removebg-preview.png" alt="" />
           </div>
         </div>
       </div>

@@ -1,10 +1,16 @@
-
+import { motion} from "framer-motion"
 
 const Skills = () => {
     return (
-        <div>
-        <h1>my skills </h1>            
-        </div>
+        <motion.div>
+            {/* right now section  */}
+        <motion.div>
+          <motion.p>
+            Learning Mongoose and Framer-motion <br /> right now{" "}
+          </motion.p>
+          <hr />
+        </motion.div>
+      </motion.div>
     );
 };
 

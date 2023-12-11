@@ -24,6 +24,7 @@ const linkVariants = {
   },
 };
 
+// eslint-disable-next-line react/prop-types
 const Links = ({setOpen}) => {
 
     const links = (

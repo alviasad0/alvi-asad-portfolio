@@ -2,7 +2,8 @@
 
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
-import Parallax from "./Components/Parallax/Parallax";
+import Skills from "./Components/Skils/Skills";
+
 import "./app.css"
 function App() {
 
@@ -13,12 +14,12 @@ function App() {
           <Navbar></Navbar>
           <Hero></Hero>
         </section>
+
         <section id="skills" className="h-screen snap-center">
-          <Parallax type="skills"></Parallax>
+          <Skills></Skills>
         </section>
-        <section className="h-screen snap-center">Skills </section>
         <section id="portfolio" className="h-screen snap-center">
-          <Parallax type="projects"></Parallax>
+          
         </section>
         <section className="h-screen snap-center">Portfolio 1</section>
         <section className="h-screen snap-center">Portfolio 2</section>
