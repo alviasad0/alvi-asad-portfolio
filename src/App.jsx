@@ -1,6 +1,7 @@
 
 
 import Hero from "./Components/Hero/Hero";
+import LatestProjects from "./Components/LatestProjects/LatestProjects";
 import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skils/Skills";
 
@@ -18,9 +19,9 @@ function App() {
         <section id="skills" className=" snap-center">
           <Skills></Skills>
         </section>
-       
-        <section id="portfolio" className="h-screen snap-center">
-          Portfolio 1
+
+        <section id="latestProjects" className="h-screen snap-center">
+          <LatestProjects></LatestProjects>
         </section>
         <section className="h-screen snap-center">Portfolio 2</section>
         <section className="h-screen snap-center">Portfolio 3</section>

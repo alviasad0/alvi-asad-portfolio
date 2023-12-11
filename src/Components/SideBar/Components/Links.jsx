@@ -45,16 +45,16 @@ const Links = ({setOpen}) => {
           className={"text-xl font-bold uppercase"}
           href={"#skills"}
         >
-          services
+          Skills
         </motion.a>
         <motion.a
           variants={linkVariants}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.95 }}
           className={"text-xl font-bold uppercase"}
-          href={"#portfolio"}
+          href={"#latestProjects"}
         >
-          Portfolio
+          Latest Projects
         </motion.a>
         <motion.a
           variants={linkVariants}
