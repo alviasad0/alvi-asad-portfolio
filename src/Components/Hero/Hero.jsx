@@ -18,7 +18,7 @@ const textVarients = {
 
 const Hero = () => {
     return (
-      <div className=" h-[90vh]  bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
+      <div className=" md:h-[90vh]  bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
         <div className="flex flex-col md:flex-row items-center justify-center">
           <motion.div
             variants={textVarients}
@@ -64,11 +64,11 @@ const Hero = () => {
                 variants={textVarients}
                 className="btn btn-primary border-2 border-white hover:bg-white hover:text-violet-700 font-bold hover:border-2 bg-transparent text-white hover:border-violet-500  uppercase "
               >
-                Contact Me
+                <a href="#contact">Contact Me</a>
               </motion.button>
             </motion.div>
           </motion.div>
-         
+
           <div>
             <img className="pb-24" src="/src/assets/profile.png" alt="" />
           </div>

@@ -2,22 +2,23 @@
 
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
+import Parallax from "./Components/Parallax/Parallax";
 import "./app.css"
 function App() {
 
   return (
     <>
       <div className="bg-[#0c0c1d] text-[#CCCCCC]">
-        <section id="homepage" className="h-screen snap-center">
+        <section id="homepage" className=" snap-center">
           <Navbar></Navbar>
           <Hero></Hero>
         </section>
-        <section id="services" className="h-screen snap-center">
-          Parallax
+        <section id="skills" className="h-screen snap-center">
+          <Parallax type="skills"></Parallax>
         </section>
-        <section className="h-screen snap-center">Services</section>
+        <section className="h-screen snap-center">Skills </section>
         <section id="portfolio" className="h-screen snap-center">
-          Parallax
+          <Parallax type="projects"></Parallax>
         </section>
         <section className="h-screen snap-center">Portfolio 1</section>
         <section className="h-screen snap-center">Portfolio 2</section>
