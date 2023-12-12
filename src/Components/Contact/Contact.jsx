@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FaGithub } from "react-icons/fa";
+
 
 const Contact = () => {
   const ref = useRef();
@@ -33,14 +33,14 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_hs5f954",
-        "bitEB9Hl5EDCo6UT6",
+        "template_w20nwri",
         formRef.current,
-        "PE1-aAM4WXQczQtLR95iV"
+        "WXPCUdHx9uFVdiFL8"
       )
       .then(
         (result) => {
-              setSuccess(true);
-              console.log(result);
+          setSuccess(true);
+          console.log(result);
         },
         (error) => {
           setError(true);
@@ -91,7 +91,8 @@ const Contact = () => {
       </motion.div>
       <div className="formContainer flex-1 relative p-12 md:p-0">
         <motion.div
-          className="phoneSvg stroke-orange-400 absolute mx-auto "
+                  className="phoneSvg stroke-orange-400 absolute mx-auto " 
+                  
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 2 }}
