@@ -1,14 +1,14 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
+
 
   const isInView = useInView(ref, { margin: "-100px" });
 
@@ -39,15 +39,29 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true);
+          
           console.log(result);
+         Swal.fire({
+           title: "Good job!",
+           text: "Your Comment Emailed !!!",
+           icon: "success",
+         });
+          formRef.current.reset();
         },
+        
         (error) => {
-          setError(true);
+          
           console.log(error);
+          Swal.fire({
+            title: "Error!",
+            text: "Email Couldn't Send !",
+            icon: "Error",
+          });
+          console.log();
         }
+        
       );
-      console.log();
+    
     };
   return (
     <motion.div
@@ -155,8 +169,7 @@ const Contact = () => {
           <button className="btn btn-primary bg-orange-600 border-orange-600 text-xl font-bold tracking-wider text-white hover:text-orange-600 hover:border-2 hover:border-orange-600  hover:bg-white">
             Submit
           </button>
-          {error && "Error"}
-          {success && "Success"}
+          
         </motion.form>
       </div>
     </motion.div>
