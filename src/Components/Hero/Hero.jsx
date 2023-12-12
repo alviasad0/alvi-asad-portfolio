@@ -17,7 +17,29 @@ const textVarients = {
     }
 } 
 
+const downloadResume = () => {
+  const pdfUrl = "/src/assets/my-mern-stack-resume.pdf"; 
+
+ 
+  const anchor = document.createElement("a");
+  anchor.href = pdfUrl;
+  anchor.target = "_blank";
+  anchor.download = "Alvi_Asad_Resume.pdf"; 
+
+ 
+  anchor.click();
+};
+
+
+
+
 const Hero = () => {
+
+
+
+
+
+  
     return (
       <div className=" md:h-[90vh]  bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
         <div className="flex flex-col  md:flex-row items-center justify-center md:gap-32">
@@ -57,6 +79,7 @@ const Hero = () => {
             >
               <motion.button
                 variants={textVarients}
+                onClick={downloadResume}
                 className="btn btn-primary border-2 border-white hover:bg-white hover:text-violet-700 font-bold hover:border-2 bg-transparent text-white hover:border-violet-500  uppercase   "
               >
                 Download my resume
@@ -71,7 +94,7 @@ const Hero = () => {
           </motion.div>
 
           <div>
-            <img className="opacity-90" src={ banner} alt="" />
+            <img className="opacity-90" src={banner} alt="" />
           </div>
         </div>
       </div>
