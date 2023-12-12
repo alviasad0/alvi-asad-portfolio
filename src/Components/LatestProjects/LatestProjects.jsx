@@ -131,7 +131,7 @@ const Single = ({ project }) => {
             </Swiper>
           </div>
           <motion.div
-            className="textContainer  flex gap-7 flex-col"
+            className="textContainer text-white flex gap-7 flex-col"
             style={{ y }}
           >
             <h2 className="text-7xl">{project?.title}</h2>
@@ -164,8 +164,8 @@ const LatestProjects = () => {
 
   return (
     <div className=" relative " ref={ref}>
-      <div className=" sticky top-0 left-0 pt-12 text-center text-orange-500 text-4xl">
-        <h1>Featured Works</h1>
+      <div className=" sticky top-0  left-0 pt-12 text-center font-bold tracking-wider text-orange-500 ">
+        <h1 className="text-7xl pb-10">Latest Projects</h1>
         <motion.div
           style={{ scaleX }}
           className=" h-[10px] bg-white"
