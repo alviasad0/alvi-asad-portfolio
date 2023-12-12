@@ -74,6 +74,15 @@ const Links = ({setOpen}) => {
         >
           Why Hire Me ?
         </motion.a>
+        <motion.a
+          variants={linkVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.95 }}
+          className={"text-xl font-bold uppercase"}
+          href={"#education"}
+        >
+          Educations
+        </motion.a>
       </>
     );
     

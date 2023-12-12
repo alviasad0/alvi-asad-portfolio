@@ -1,6 +1,7 @@
 
 
 import Contact from "./Components/Contact/Contact";
+import Educations from "./Components/Educations/Educations";
 import Hero from "./Components/Hero/Hero";
 import LatestProjects from "./Components/LatestProjects/LatestProjects";
 import Navbar from "./Components/Navbar/Navbar";
@@ -31,6 +32,9 @@ function App() {
         </section>
         <section id="whyChooseMe" className="h-screen snap-center">
           <WhyHireMe></WhyHireMe>
+        </section>
+        <section id="education" className="h-screen snap-center">
+          <Educations></Educations>
         </section>
       </div>
     </>
