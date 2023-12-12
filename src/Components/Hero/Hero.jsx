@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import banner from "./../../assets/banner.png";
 
 
 const textVarients = {
@@ -70,7 +71,7 @@ const Hero = () => {
           </motion.div>
 
           <div>
-            <img className="opacity-90" src="/src/assets/banner.png" alt="" />
+            <img className="opacity-90" src={ banner} alt="" />
           </div>
         </div>
       </div>

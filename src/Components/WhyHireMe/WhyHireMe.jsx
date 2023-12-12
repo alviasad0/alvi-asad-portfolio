@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import profilepic from "./../../assets/profile.jpg";
 const variants = {
   initial: {
     x: -400,
@@ -50,7 +50,7 @@ const WhyHireMe = () => {
           </motion.p>
         </motion.div>
         <motion.img
-          src="/src/assets/profile.jpg"
+          src={profilepic}
           className="mx-auto h-[400px] w-[350px]  rounded-e-3xl mt-10"
           alt=""
         />

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import UIU from "./../../assets/UIU.jpg"
 const variants = {
   initial: {
     x: -400,
@@ -31,7 +31,7 @@ const Educations = () => {
       </motion.div>
       <motion.div className="flex flex-col md:flex-row gap-20 pt-20 justify-center items-center">
         <motion.img
-          src="/src/assets/UIU.jpg"
+                  src={ UIU}
           className="mx-auto h-[400px] w-[350px] md:w-[600px]  rounded-s-3xl mt-10"
           alt=""
         />
