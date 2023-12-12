@@ -23,7 +23,7 @@ const Skills = () => {
 
    console.log(allSkills);
     useEffect(() => {
-        fetch("/public/skills.json")
+        fetch("/skills.json")
           .then((response) => response.json())
           .then((data) => setAllSkills(data));
    },[])

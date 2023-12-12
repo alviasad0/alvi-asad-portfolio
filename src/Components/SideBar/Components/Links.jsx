@@ -70,9 +70,9 @@ const Links = ({setOpen}) => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.95 }}
           className={"text-xl font-bold uppercase"}
-          href={"#about"}
+          href={"#whyChooseMe"}
         >
-          About
+          Why Hire Me ?
         </motion.a>
       </>
     );

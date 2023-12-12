@@ -5,6 +5,7 @@ import Hero from "./Components/Hero/Hero";
 import LatestProjects from "./Components/LatestProjects/LatestProjects";
 import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skils/Skills";
+import WhyHireMe from "./Components/WhyHireMe/WhyHireMe";
 
 import "./app.css"
 function App() {
@@ -24,13 +25,12 @@ function App() {
         <section id="latestProjects" className=" ">
           <LatestProjects></LatestProjects>
         </section>
-        <section className="h-screen snap-center">Portfolio 2</section>
-        <section className="h-screen snap-center">Portfolio 3</section>
+        
         <section id="contact" className="h-screen snap-center">
           <Contact></Contact>
         </section>
-        <section id="about" className="h-screen snap-center">
-          about
+        <section id="whyChooseMe" className="h-screen snap-center">
+          <WhyHireMe></WhyHireMe>
         </section>
       </div>
     </>
