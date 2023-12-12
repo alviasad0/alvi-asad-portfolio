@@ -20,7 +20,7 @@ function App() {
           <Skills></Skills>
         </section>
 
-        <section id="latestProjects" className="h-screen snap-center">
+        <section id="latestProjects" className=" ">
           <LatestProjects></LatestProjects>
         </section>
         <section className="h-screen snap-center">Portfolio 2</section>
