@@ -104,13 +104,13 @@ const Single = ({ project }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section className="h-screen snap-center">
-      <div className="flex justify-center items-center  h-full overflow-hidden">
-        <div className=" max-w-screen-xl  h-full mx-auto flex flex-col md:flex-row justify-center  items-center gap-20">
-          <div className="imageContainer  h-1/2 w-1/2  " ref={ref}>
+    <section className="h-[70vh] mt-10  md:h-screen snap-center">
+      <div className="flex flex-col md:flex-row justify-center items-center  h-full  overflow-hidden">
+        <div className="max-w-sm md:max-w-screen-xl  h-full mx-auto flex flex-col md:flex-row justify-center  items-center gap-20">
+          <div className="imageContainer h-full md:h-1/2 w-full md:w-1/2  " ref={ref}>
             <Swiper
               pagination={{
                 type: "fraction",
@@ -124,18 +124,18 @@ const Single = ({ project }) => {
                   <img
                     src={image}
                     alt=""
-                    className="object-cover w-full h-full"
+                    className=" object-cover w-full h-full"
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
           <motion.div
-            className="textContainer text-white flex gap-7 flex-col"
+            className=" textContainer text-white flex gap-7 flex-col"
             style={{ y }}
           >
-            <h2 className="text-7xl">{project?.title}</h2>
-            <p>{project?.description}</p>
+            <h2 className="text-3xl md:text-7xl">{project?.title}</h2>
+            <p className="">{project?.description}</p>
             <div>
               {" "}
               <button className="btn btn-primary bg-orange-600 border-orange-600 text-xl font-bold tracking-wider text-white hover:text-orange-600 hover:border-2 hover:border-orange-600  hover:bg-white">
@@ -165,10 +165,10 @@ const LatestProjects = () => {
   return (
     <div className=" relative " ref={ref}>
       <div className=" sticky top-0  left-0 pt-12 text-center font-bold tracking-wider text-orange-500 ">
-        <h1 className="text-7xl pb-10">Latest Projects</h1>
+        <h1 className="text-4xl md:text-7xl pb-5">Latest Projects</h1>
         <motion.div
           style={{ scaleX }}
-          className=" h-[10px] bg-white"
+          className=" md:mb-0 h-[10px] bg-white"
         ></motion.div>
       </div>
       {projects.map((project) => (

@@ -1,5 +1,6 @@
 
 
+import Contact from "./Components/Contact/Contact";
 import Hero from "./Components/Hero/Hero";
 import LatestProjects from "./Components/LatestProjects/LatestProjects";
 import Navbar from "./Components/Navbar/Navbar";
@@ -26,7 +27,7 @@ function App() {
         <section className="h-screen snap-center">Portfolio 2</section>
         <section className="h-screen snap-center">Portfolio 3</section>
         <section id="contact" className="h-screen snap-center">
-          Contact
+          <Contact></Contact>
         </section>
         <section id="about" className="h-screen snap-center">
           about
